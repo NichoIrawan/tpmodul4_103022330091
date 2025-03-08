@@ -1,6 +1,7 @@
 ﻿
 using tpmodul4_103022330091;
 
+//Soal Kode pos
 KodePos[] listKodePos = new KodePos[11];
 
 listKodePos[0] = new KodePos("Batununggal", "40266");
@@ -29,3 +30,12 @@ foreach (KodePos kodePos in listKodePos)
         Console.WriteLine(kodePos.kelurahan + "\t\t| " + kodePos.getKodePos());
     }
 }
+
+Console.WriteLine("\n");
+
+//Soal state based
+DoorMachine doorMachine = new DoorMachine();
+
+doorMachine.reaksi();
+doorMachine.putarKunci();
+doorMachine.reaksi();
